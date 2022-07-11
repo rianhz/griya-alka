@@ -1,0 +1,96 @@
+.title-sub {
+  margin: 50px 0 10px 0;
+}
+
+/* nav */
+.navbar-brand img {
+  width: 100px;
+}
+
+/* running text */
+.running-text {
+  padding-top: 150px;
+}
+
+/* carousel */
+.carousel-inner {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  border-radius: 20px;
+}
+
+.artikel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* mitra */
+.mitra {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-item {
+  font-size: 20px;
+}
+
+.social-item a {
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 10px;
+  color: black;
+}
+
+.social-item a i {
+  padding-right: 7px;
+}
+
+.social-item a:hover {
+  color: #5cb85c;
+}
+
+/* whatsapp icon */
+
+.whatsapp {
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  bottom: 0;
+  transition: 1.8s;
+}
+
+.whatsapp img {
+  border-radius: 50%;
+  width: 40px;
+  transition: all 0.9s;
+}
+
+.whatsapp span {
+  display: none;
+  transition: 1.9s;
+}
+
+.whatsapp:hover span {
+  display: inline-block;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: rgb(190, 188, 188);
+}
