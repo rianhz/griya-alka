@@ -1,10 +1,23 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .title-sub {
+  padding-top: 30px;
   margin: 50px 0 10px 0;
 }
 
 /* nav */
+.navbar {
+  padding: 0;
+}
+
 .navbar-brand img {
-  width: 100px;
+  width: 70px;
+}
+
+.navbar-nav li a {
+  font-weight: 500;
 }
 
 /* running text */
@@ -22,22 +35,40 @@
   border-radius: 20px;
 }
 
+/* koten-konten */
+.konten-konten {
+  padding: 0 20px;
+  text-align: justify;
+}
+
 .artikel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
 }
 
 /* mitra */
 .mitra {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* social */
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .social {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .social-item {
@@ -47,9 +78,10 @@
 .social-item a {
   text-decoration: none;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   color: black;
+  transition: 0.5s ease;
 }
 
 .social-item a i {
@@ -57,18 +89,19 @@
 }
 
 .social-item a:hover {
-  color: #5cb85c;
+  background-color: white;
 }
 
 /* whatsapp icon */
 
 .whatsapp {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
   padding: 10px;
   border-radius: 50%;
   border: none;
   position: fixed;
-  z-index: 99999;
+  z-index: 2;
   right: 0;
   bottom: 0;
   transition: 1.8s;
@@ -76,21 +109,35 @@
 
 .whatsapp img {
   border-radius: 50%;
-  width: 40px;
-  transition: all 0.9s;
-}
-
-.whatsapp span {
-  display: none;
-  transition: 1.9s;
-}
-
-.whatsapp:hover span {
-  display: inline-block;
+  width: 70px;
 }
 
 /* footer */
+
 footer {
-  text-align: center;
-  background-color: rgb(190, 188, 188);
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .running-text {
+    color: red;
+  }
+
+  .artikel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mitra {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 70%;
+  }
+
+  .sosmed {
+    padding-top: 35px;
+  }
 }
